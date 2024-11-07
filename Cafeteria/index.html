@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <style>
+        body {
+            background-color: navajowhite;
+        }
+
+        header {
+            width: 80vw;
+            height: 10vh;
+            color: azure;
+            background-color: rgb(97, 54, 54);
+            margin: auto;
+            /* centrado de la caja */
+            text-align: center;
+            line-height: 10vh;
+            font-size: 2rem;
+            border-radius: 10px;
+            /* 1.5 * 16px(1 rem) */
+        }
+
+        table {
+            border-collapse: initial;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        img {
+            border: cadetblue; 
+            
+            
+            
+
+        }
+
+        main {
+            width: 80vw;
+            margin: auto;
+        }
+
+        footer {
+            width: 80vw;
+            height: 10vh;
+            background-color: rgb(97, 54, 54);
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            font-size: 1rem;
+            clear: both;
+           
+            /* corto la flotacion del footer*/
+        }
+
+        .cursiva {
+            font-style: italic;
+        }
+        .subrayado{
+            text-decoration: underline;
+        }
+        .seccion1{
+            width: 100%;
+            background-color: rgb(97, 54, 54);
+            color: aliceblue;
+            text-align: center; 
+            font-size: 1.5rem;
+			float: left;
+            
+        }
+        .seccion2{
+            width: 10%;
+            background-color: rgb(97, 54, 54);
+            color: aliceblue;
+            text-align: center;
+            font-size: 1.5rem;
+			float: left;
+        }
+        
+        
+    </style>
+  
+    
+</head>
+
+<body>
+    <main>
+        <header class="cursiva">Expressoo</header>
+        <hr>
+        <img src="granohd.jpg.jpg" height="300" width="1180">
+        <hr>
+        
+
+		
+        <section class="seccion1">
+            <table border="10">
+                <thead>
+                    <tr>
+                        <th class="cursiva">Carta De Cafe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cursiva">
+                        <td>CafeConLeche</td>
+                        <td>Precio</td>
+                        <td>$3500</td>
+                        
+                    </tr>
+                    <tr class="cursiva">
+                        <td>Lagrima</td>
+                        <td>Precio</td>
+                        <td>$3500</td>
+                        
+                    </tr>
+                    <tr class="cursiva">
+                        <td>CafeExpresso</td>
+                        <td>Precio</td>
+                        <td>$3000</td>
+                        
+                    </tr>
+                    <tr class="cursiva">
+                        <td>CafeDoble</td>
+                        <td>Precio</td>
+                        <td>$3000</td>
+                    </tr>
+                    <tr class="cursiva">
+                        <td>Ristretto</td>
+                        <td>Precio</td>
+                        <td>$2000</td>
+                    </tr>
+                    <tr class="cursiva">
+                        <td>Capuchino</td>
+                        <td>Precio</td>
+                        <td>$3000</td>
+                    </tr>
+                    <tr class="cursiva">
+                        <td>Machiato</td>
+                        <td>Precio</td>
+                        <td>$4000</td>
+                    </tr>
+                </tbody>
+        </section>
+        
+ 
+        <section class="seccion2">
+            
+            </table>
+            <table border="10" >
+                <thead>
+                    <tr>
+                        <th class="cursiva">Comida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cursiva">Medialuna</td>
+                        <td class="cursiva">Precio</td>
+                        <td>$900</td>
+                    </tr>
+                    <tr>
+                        <td class="cursiva">Brownie</td>
+                        <td class="cursiva">Precio</td>
+                        <td>$2000</td>
+                    </tr>
+                    <tr>
+                        <td class="cursiva">Chipa</td>
+                        <td class="cursiva">Precio</td>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <td class="cursiva">TostadoJamonYQueso</td>
+                        <td class="cursiva">Precio</td>
+                        <td>$2500</td>
+                    </tr>
+                    <tr>
+                        <td class="cursiva">Tostadas</td>
+                        <td class="cursiva">Precio</td>
+                        <td>$3000</td>
+                    </tr>
+                </tbody>
+            </table>
+           
+            <br><hr><br>
+<form action="destino.html" method="post">
+    <table border="10">
+        <tr>
+            <td>Nombre</td>
+            <td><input  name="nombre" id="nombre" required></td>
+        </tr>
+        <tr>
+            <td>Pago</td>
+            <td><label for="efectivo">Efectivo</label>
+                <input type="radio" name="pago" id="efectivo"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label for="tarjeta">Tarjeta</label>
+                <input type="radio" name="pago" id="tarjeta"></td>
+        </tr>
+        <tr>
+            <td>Atencion</td>
+            <td>
+                <select name="atencion" id="atencion">
+                    <option value="">Seleccione</option>
+                    <option value="bueno">Buena</option>
+                    <option value="media">Media</option>
+                    <option value="Mala">Mala</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Enviar Datos">
+                <input type="reset" value="Cancelar Envio">
+            </td>
+        </tr>
+    </table>
+</form>
+            
+        </section> 
+        
+        <img src="GranoCafe2.jpg.jpg" height="300" width="1180">
+
+    </main>
+    
+    <footer class="cursiva"> <p>Los granos de café de calidad son la base de una excelente taza de café. 
+        La elección de granos frescos y bien seleccionados asegura que obtendrás sabores más ricos y complejos, 
+        0en lugar de notas amargas o quemadas que pueden surgir de granos de baja calidad. 
+        La frescura y el origen del grano juegan un papel vital en cómo se desarrollan los sabores y aromas en tu taza.</p></footer>
+        
+</body>
+
+</html>

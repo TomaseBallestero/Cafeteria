@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 80vw;
+            height: 20vh;
+            background-color: gray;
+            margin: auto;/* centrado de la caja */
+            text-align: center;
+            line-height: 20vh;
+            font-size: 1.5rem;/* 1.5 * 16px(1 rem) */
+        }
+        
+        nav{
+            width: 80vw;
+            height: 15vh;
+            background-color: beige;
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            line-height: 15vh;
+            font-size: 1rem;
+        }
+        
+        footer{
+            width: 80vw;
+            height: 10vh;
+            background-color: darkcyan;
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            line-height: 10vh;
+            font-size: 1rem;
+            clear: both;/* corto la flotacion del footer*/
+        }
+        
+        .seccion1{
+            width: 25%;
+            height: 55vh;
+            background-color: red;
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            line-height: 55vh;
+            font-size: 1rem;
+			float: left;
+        }
+        
+        .seccion2{
+            width: 75%;
+            height: 55vh;
+            background-color: green;
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            line-height: 55vh;
+            font-size: 1rem;
+			float: left;
+        }
+
+        main{width: 80vw; margin: auto;}
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    <nav>Barra de Navegacion</nav>
+    <main>
+        <section class="seccion1">
+            <article>Articulo 1 - Seccion 1</article>
+        </section>
+        <section class="seccion2">
+            <article>Articulo 1 - Seccion 2</article>
+        </section>
+    </main>
+    <footer>Pie de Pagina</footer>
+</body>
+</html>
